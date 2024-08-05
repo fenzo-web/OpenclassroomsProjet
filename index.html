@@ -22,32 +22,38 @@
 
   <body>
     <div class="main-container">
+      <!-- Section Navigation-->
       <header>
         <nav>
           <a href="index.html" class="lien-icone">
             <img src="images/logo/Booki.png" alt="Logo Booki" class="imgbooki" />
           </a>
           <ul class="list">
-            <li href="#AncreHebergements" class="list-entete">Hébergements</li>
-            <li href="#AncreActivites" class="list-entete">Activités</li>
+            <li class="list-entete active">
+               <a href="#AncreHebergements">Hébergements</a>
+            </li>
+            <li class="list-entete">
+                <a href="#AncreActivites">Activités</a>
+            </li>
           </ul>
         </nav>
       </header>
       <main>
+        <!--Section Research-->
         <section class="info">
             <div class="headline">
                 <h1 class="section-title">Trouvez votre Hébergement pour des vacances de rêve</h1>
                 <p class="info-subtitle">En plein centre-ville ou en nature</p>
             </div>
             <div class="search-bar">
-                <form action="" method="post">
+                <form action="#" method="post">
                     
                         <div class="localisation">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <input type="search"  placeholder="Marseille,France">
                         <input type="submit" value="Rechercher">
-                   
+                        
                 </form> 
             </div>
             <div class="filtres">
@@ -59,13 +65,13 @@
             </div>
             <div class="info-bar"><i class="fa-solid fa-info"></i><p class="info-bar-text">Plus de 500 logements sont disponibles dans cette ville</p></div>
         </section>
+        <!--Section Hebergements -->
         <div class="hebergements-and-populaires">
           <section class="hebergements">
             <div class="hebergements-title">
               <h2 id="AncreHebergements" class="section-title">Hébergements à Marseille</h2>
             </div>
             <div class="hebergements-cards">
-                <div class="colone1">
                     <a href="#">
                         <article class="card">
                             <img 
@@ -78,6 +84,7 @@
                                     <p class="card-subtitle">
                                         Nuit à partir de 52<span class="euro">€</span>
                                     </p>
+                                </div>
                                 <div class="card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -104,6 +111,7 @@
                                     <p class="card-subtitle">
                                         Nuit à partir de 96<span class="euro">€</span>
                                     </p>
+                                </div>
                                 <div class="card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -130,6 +138,7 @@
                                     <p class="card-subtitle">
                                         Nuit à partir de 76<span class="euro">€</span>
                                     </p>
+                                </div>
                                 <div class="card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -144,8 +153,6 @@
                             </div>
                         </article>
                     </a>
-                </div>
-                <div class="colone2">
                     <a href="#">
                         <article class="card">
                             <img 
@@ -158,6 +165,7 @@
                                     <p class="card-subtitle">
                                         Nuit à partir de 46<span class="euro">€</span>
                                     </p>
+                                </div>
                                 <div class="card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -184,6 +192,7 @@
                                     <p class="card-subtitle">
                                         Nuit à partir de 25<span class="euro">€</span>
                                     </p>
+                                </div>
                                 <div class="card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -210,6 +219,7 @@
                                     <p class="card-subtitle">
                                         Nuit à partir de 23<span class="euro">€</span>
                                     </p>
+                                </div>
                                 <div class="card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -224,9 +234,10 @@
                             </div>
                         </article>
                     </a>
-                </div>
             </div>
+            <a class="Afficher-plus"> Afficher plus</a>
           </section>
+          <!--Section Populaires-->
           <section class="populaires">
             <div class="populaires-title">
               <h2 class="section-title">Les plus populaires</h2>
@@ -319,15 +330,85 @@
             </div>
           </section>
         </div>
-        <div class="Activites à Marseille">
+        <!--Section Activites-->
           <section class="Activites">
             <div class="Activites-title">
               <h2 id="AncreActivites" class="section-title">Activités à Marseille</h2>
             </div>
+            <div class="Activites-card">
+                <a href="#">
+                    <article class="card">
+                        <img
+                            src="images/activites/reno-laithienne.jpg"
+                            alt="Images des activites"
+                            class="img1"
+                        />
+                        <div class="card-content">
+                            <h3 class="card-title">Vieux-Port</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="card">
+                        <img
+                            src="images/activites/paul-hermann.jpg"
+                            alt="Images des activites"
+                        />
+                        <div class="card-content">
+                            <h3 class="card-title">Fort de Pomègues</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="card">
+                        <img
+                            src="images/activites/kilyan-sockalingum.jpg"
+                            alt="Images des activites"
+                        />
+                        <div class="card-content">
+                            <h3 class="card-title">Parc National des Calanques</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="card">
+                        <img
+                            src="images/activites/florian-wehde.jpg"
+                            alt="Images des activites"
+                        />
+                        <div class="card-content">
+                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                        </div>
+                    </article>
+                </a>
+            </div>
           </section>
-        </div>
       </main>
-      <footer></footer>
+      <!--Footer-->
+      <footer>
+        <div>
+            <ul class="list-footer">
+                <h3>À propos</h3>
+                <li>Fonctionnement du site</li>
+                <li>Conditions générales</li>
+                <li>Données et confidentialité</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="list-footer">
+                <h3>Nos hébergements</h3>
+                <li>charte qualité</li>
+                <li>Proposer votre hôtel</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="list-footer">
+                <h3>Assistance</h3>
+                <li>Centre d'aide</li>
+                <li>Nous contacter</li>
+            </ul>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
