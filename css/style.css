@@ -240,7 +240,7 @@ button:hover {
 .info-bar {
     display: flex;
     gap: 10px;
-    height: 24px;
+    align-items: center;
 }
 .fa-info {
     border: 1px solid #d9d9d9;
@@ -555,7 +555,7 @@ footer > * {
     flex-direction: column-reverse;
     gap: 15px ;
    }
-   
+
    /* Populaire */
    .populaires-cards {
     flex-direction: column;
