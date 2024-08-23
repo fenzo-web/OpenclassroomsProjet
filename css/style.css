@@ -113,7 +113,7 @@ nav {
     height: 19px;
 }
 
-/****** Headline ******/
+/****** head-line ******/
 .info {
     gap: 35px;
     padding-top: 30px;
@@ -137,7 +137,7 @@ form {
     justify-content: flex-start;
 }
 
-.localisation {
+.location {
     align-items: center;
     display: flex;
     align-content: center;
@@ -154,6 +154,7 @@ form {
    height: 18px;
    color: #000000;
    margin: 18px;
+   font-size: 18px;
    
 }
 
@@ -166,8 +167,7 @@ input[type="search"] {
     font-weight: 700;
     /* font-size: 18px; */
     text-align: center;
-    color: #000
-    
+    color: #000;
 }
 
 button {
@@ -181,15 +181,16 @@ button {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 0px; 
     display: flex;
+    position: relative;
 }
 
-.recherche {
+.search {
     align-self: center;
     padding-left: 16px;
     padding-right: 16px;  
 }
 
-.iconeRecherche {
+.icone-search {
    visibility: hidden;
    align-self: center;
    position: absolute;
@@ -203,7 +204,7 @@ button {
     margin-top: 35px;
     margin-bottom: 35px;
 }
-.FiltresTextIcone {
+.filtres-text-icone {
     border: 2px solid #d9d9d9;
     border-radius: 25px;
     padding-left: 10px;
@@ -212,20 +213,22 @@ button {
     align-items: center;
     justify-content: center;
     justify-content: space-between;
+    gap: 10px;
 }
 
-.FiltresTextIcone:hover{
+.filtres-text-icone:hover{
     background-color: #DEEBFF;
     cursor: pointer;
+}
+  /* Tailles Icone */
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-fire {
+    font-size: 22px;
 }
 
 .text {
     padding-right: 19px;
-    padding-bottom: 4px;
-    padding-left: 10px;
-    height: 20px;
 }
-.Categorie {
+.category {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -244,6 +247,7 @@ button {
     display: flex;
     align-items: center;
     border-radius: 50%;
+    font-size: 12px;
 }
 .info-bar-text {
     display: flex;
@@ -282,7 +286,7 @@ button {
     width: 100%;
 }
 
-.Afficher-plus{
+.show-more{
     font-size: 18px;
     font-weight: 700;
 }
@@ -451,7 +455,7 @@ footer > * {
     .filtres {
         display: block;
     }
-    .Categorie {
+    .category {
         margin-top: 20px;
     }
     /* Activites media queries */
@@ -462,9 +466,15 @@ footer > * {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 772px) {  /*max 767.98 avant j'ai modifier */
+@media (max-width: 767.98px) {  /*max 767.98 avant j'ai modifier */
    /*general */
     .main-container{
+        padding: 0;
+    }
+    body {
+        width: 100%;
+    }
+    main {
         padding: 0 20px;
     }
 
@@ -476,7 +486,9 @@ footer > * {
         align-self: center;
     }
     .list {
-        justify-content: space-around;
+        gap: 0px;
+        padding-left: 0px;
+        padding-right: 0;
     }
     .list-entete a {
         padding-top: 0px;
@@ -484,19 +496,24 @@ footer > * {
     }
     .list-entete:hover, .list-entete.active {
         box-shadow: inset 0px -2px 0px 0px rgba(0,101,252,1);
+
+    }
+    .list-entete {
+        width: 50%;
+        text-align: center;
+        box-shadow: inset 0px -2px 0px 0px #F2F2F2; 
     }
 
     /* Info bar */
    
-    .recherche {
+    .search {
         visibility: hidden;
     }
-    .iconeRecherche {
+    .icone-search {
         visibility: revert;
-        padding: 16px;
-    }
-    form {
-        justify-content: space-between;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); /* Position relative grace au top et left */
     }
    .fa-magnifying-glass {
         color: #FFFFFF;
@@ -506,20 +523,22 @@ footer > * {
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
         /* test mais marche pas en desous width: 9%; */ 
+        width: 49px;
+        height: 49px;
     }
-    form {
-        margin-right: 20px;
+    input[type="search"] {
+        min-width: 60%;    /* check pour les details entre  375 et 668 */
     }
     
     /* Filtres */
-   .FiltresTextIcone {
+   .filtres-text-icone {
     width: 42%;
-    justify-content: center;
+    justify-content: flex-start;
    }
    .text {
     padding-right: 0px;
    }
-   .Categorie {
+   .category {
     flex-wrap: wrap;
 }
    
@@ -527,6 +546,7 @@ footer > * {
    /*Hebergements et populaires */
    .hebergements-and-populaires{
     flex-direction: column-reverse;
+
    }
    
    /* Populaire */
