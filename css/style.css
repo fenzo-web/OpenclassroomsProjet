@@ -110,7 +110,6 @@ nav {
 
 .imgbooki {
     width: 61px;
-    height: 19px;
 }
 
 /****** head-line ******/
@@ -230,6 +229,7 @@ button:hover {
 
 .text {
     padding-right: 19px;
+    font-size: 17px;
 }
 .category {
     display: flex;
@@ -462,8 +462,11 @@ footer > * {
     .filtres {
         display: block;
     }
-    .category {
+    .filtres-text-icone{
         margin-top: 20px;
+    }
+    .text {
+        font-size: 16px;
     }
     /* Activites media queries */
     .Activites-card img {
@@ -544,14 +547,19 @@ footer > * {
     
     /* Filtres */
    .filtres-text-icone {
-        width: 42%;
+        width: 40%;
         justify-content: flex-start;
+        padding-left: 19px;
     }
    .text {
         padding-right: 0px;
+        font-size: 14px;
     }
    .category {
         flex-wrap: wrap;
+        gap: 0px;
+        justify-content: space-between
+        ;
     }
    
    /*Hebergements et populaires */
@@ -594,4 +602,3 @@ footer > * {
     flex-direction: column;
    }
 }
-
