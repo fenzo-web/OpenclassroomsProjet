@@ -416,7 +416,6 @@ footer > * {
 
 .list-footer h3 {
     padding-top: 20px;
-    padding-bottom: 15px;
 }
 .list-footer li {
     padding-bottom: 15px;
@@ -554,7 +553,7 @@ footer > * {
    /*Hebergements et populaires */
    .hebergements-and-populaires{
     flex-direction: column-reverse;
-
+    gap: 15px ;
    }
    
    /* Populaire */
@@ -563,6 +562,9 @@ footer > * {
    }
    .populaires-cards a {
     width: 100%;
+   }
+   .populaires {
+    margin-top: 0;
    }
 
    /* Hebergements */
