@@ -8,6 +8,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --backcolor-hebergements: #ffff;
 }
 
 .fa-solid {
@@ -476,7 +477,7 @@ footer > * {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {  
    /*general */
     .main-container{
         padding: 0;
@@ -582,6 +583,9 @@ footer > * {
    /* Hebergements */
    .hebergements-cards a {
     width: 100%;
+   }
+   section.hebergements {
+    background-color: var(--backcolor-hebergements);
    }
 
    /* Activites */
