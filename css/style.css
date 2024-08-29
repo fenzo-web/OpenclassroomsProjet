@@ -482,6 +482,10 @@ footer > * {
         min-width: 320px;
         margin: 0 auto;
     }
+    html,body{          /* Ma solution pour la bande blanche */
+        width:100%;
+        overflow-x:hidden;
+        }
 
     /* Navigation */
     nav {
@@ -572,6 +576,7 @@ footer > * {
    }
    .hebergements-and-populaires section {
     border-radius: 0px;
+    padding: 20px;
    }
    /* Populaire */
    .populaires-cards {
